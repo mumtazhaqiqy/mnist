@@ -15,7 +15,7 @@ if uploaded_file:
     image = Image.open(uploaded_file).convert("L")
     image = ImageOps.invert(image)
     image = image.resize((28, 28))
-ä
+
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
     # Preprocess the image and predict
